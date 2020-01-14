@@ -1,0 +1,43 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <h4 class="ml-auto text-light">Stores</h4>
+                </div>
+            </nav>
+
+            <div class="container form-row">
+                    <input type="text" class="search_store form-control mr-3" placeholder="Search for Store">
+                   
+                     <div class="form-group">
+                            <select id="return-date" class="search_store form-control">
+                                <option>List by Category</option>
+                                <option>Events</option>
+                                <option>Holiday Packages</option>
+                                <option>Artwork</option>
+                            </select>
+                     </div>
+            </div>
+
+            <div class="container row mt-3">
+                    <div class="card mb-2" style="width: 18rem;">
+                            <div class="card-body" style="text-align: center;">
+                                    <a href="newstore.html" class="btn btn-success btn-small mb-4">NEW STORE</a>
+                                    <p style="font-size: smaller;">A store is like a folder where you will be able to create events, upload digital content or set up a shop to sell your products online.</p>
+                            </div>
+                    </div>
+                                 
+            </div>
+        </div>
+        
+{% endblock %}

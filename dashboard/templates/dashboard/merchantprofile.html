@@ -1,0 +1,72 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <h4 class="ml-auto text-light">Profile</h4>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg" style="background-color: #F0FFF0;">
+                <a href="#" class="btn btn-success mr-3">Bank Details</a>
+                <a href="merchant_account.html">Account</a>
+            </nav>
+
+            <div class="container mt-5">
+                
+            
+                <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputtext">Bank Name:</label>
+                            <input type="text" class="form-control" id="inputtext">
+                          </div>
+                          <div class="form-group col-md-6">
+                                <label for="inputtext">Bank Branch:</label>
+                                <input type="text" class="form-control" id="inputtext">
+                              </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputtext">Account Name:</label>
+                                <input type="text" class="form-control" id="inputtext">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputtext">Account Number:</label>
+                                <input type="text" class="form-control" id="inputtext">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputtext">M-PESA Number:</label>
+                                <input type="text" class="form-control" id="inputtext">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputState">Preffered Currency:</label>
+                                <select id="inputState" class="form-control">
+                                    <option unselectable="on" >What is your currency?</option>
+                                    <option>KES</option>
+                                    <option>UGX</option>
+                                    <option>RWF</option>
+                                    <option>USD</option>
+                                </select>
+                            </div>
+                                    
+                        </div>
+
+                        <div class="container-fluid">   
+                            <button  class="btn btn-success ml-auto">SAVE</button>
+                        </div>
+                </form>
+                
+        </div>
+        </div>
+{% endblock %}

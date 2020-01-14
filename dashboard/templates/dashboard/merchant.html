@@ -1,0 +1,81 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container">  
+                <a href="merchantstores.html" class="btn btn-success btn-small mb-4">CREATE STORE</a>
+            </div>
+
+            <div class="container row mt-3" style="justify-content: center;">
+                    <div class="card ml-3 mb-2" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center; color: #17a04e ;">Net Earnings</h5>
+                              <h3 class="card-subtitle mb-2 text-muted" style="text-align: center;">0.00</h3>
+                              
+                            </div>
+                    </div>
+                    <div class="card ml-3 mb-2" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center; color: #17a04e ;">Amount Withdrawn</h5>
+                              <h3 class="card-subtitle mb-2 text-muted" style="text-align: center;">0.00</h3>
+                              
+                            </div>
+                    </div>
+                    <div class="card ml-3 mb-2" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center; color: #17a04e ;">Current Balance</h5>
+                              <h3 class="card-subtitle mb-2 text-muted" style="text-align: center;">0.00</h3>
+                              
+                            </div>
+                    </div>               
+            </div>
+            <div class="container">
+                <table class="table mt-3">
+                    <thead class="bg-success">
+                      <tr>
+                        <th colspan="5" scope="col">Store Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody style="background: #F0FFF0;">
+                      <tr>
+                        <td colspan="5">Koroga Fest</td>
+                        <td>Event</td>
+                        <td>Kes</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">Koroga Fest</td>
+                        <td>Event</td>
+                        <td>Kes</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">Koroga Fest</td>
+                        <td>Event</td>
+                        <td>Kes</td>
+                        <td>100</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+
+{% endblock %}
+    

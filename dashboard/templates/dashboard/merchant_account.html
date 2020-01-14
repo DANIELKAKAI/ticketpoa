@@ -1,0 +1,73 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <h4 class="ml-auto text-light">Account</h4>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg" style="background-color: #F0FFF0;">
+                <a href="merchantprofile.html" class="mr-3">Bank Details</a>
+                <a href="merchant_account.html" class="btn btn-success">Account</a>
+            </nav>
+
+            <div class="container mt-5">
+                
+            
+                <form>
+                    <div class="container row">
+                            <div class="file-upload col-md-4 ">
+                                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+                                    
+                                    <div class="image-upload-wrap">
+                                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                        <div class="drag-text">
+                                        <h3>Drag and drop a file or select add Image</h3>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-content">
+                                        <img class="file-upload-image" src="#" alt="your image" />
+                                        <div class="image-title-wrap">
+                                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class=" row col-md-8">
+                                <div class="form-group mr-3" style="width: 250px;">
+                                    <label for="inputtext">First Name:</label>
+                                    <input type="text" class="form-control" id="inputtext">
+                                </div>
+                                <div class="form-group mr-3" style="width: 250px;">
+                                    <label for="inputtext">Last Name:</label>
+                                    <input type="text" class="form-control" id="inputtext">
+                                </div>
+                                <div class="form-group mr-3" style="width: 250px;">
+                                    <label for="inputtext">Email Address:</label>
+                                    <input type="email" class="form-control" id="inputtext">
+                                </div>
+                                <div class="form-group mr-3" style="width: 250px;">
+                                    <label for="inputtext">Phone Number:</label>
+                                    <input type="text" class="form-control" id="inputtext">
+                                </div> 
+                                <div class="form-group">   
+                                    <button  class="btn btn-success ml-auto" style="width: 250px;">SAVE</button>
+                                </div>                      
+                            </div>
+                            
+                            
+                    </div>
+
+                    
+                </form>
+                
+        </div>
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <h4 class="ml-auto text-light">Users</h4>
+                </div>
+            </nav>
+
+            <div class="container form-row">
+                <!-- Extra large modal -->
+                <button type="button" class="btn btn-success mr-3" data-toggle="modal" data-target=".bd-example-modal-xl">
+                    Add User
+                </button>
+                <input type="text" class="search_store form-control" placeholder="Search for User">
+                   
+            </div>
+            <!-- Modal-->
+            <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" style="max-width: 1140px">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Edit user</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body row">
+                                <div class="file-upload col-md-4 ">
+                                        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+                                        
+                                        <div class="image-upload-wrap">
+                                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                            <div class="drag-text">
+                                            <h3>Drag and drop a file or select add Image</h3>
+                                            </div>
+                                        </div>
+                                        <div class="file-upload-content">
+                                            <img class="file-upload-image" src="#" alt="your image" />
+                                            <div class="image-title-wrap">
+                                            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class=" row col-md-8">
+                                    <div class="form-group mr-3" style="width: 300px;">
+                                        <label for="inputtext">First Name:</label>
+                                        <input type="text" class="form-control" id="inputtext">
+                                    </div>
+                                    <div class="form-group mr-3" style="width: 300px;">
+                                        <label for="inputtext">Last Name:</label>
+                                        <input type="text" class="form-control" id="inputtext">
+                                    </div>
+                                    <div class="form-group mr-3" style="width: 300px;">
+                                        <label for="inputtext">Email Address:</label>
+                                        <input type="email" class="form-control" id="inputtext">
+                                    </div>
+                                    <div class="form-group mr-3" style="width: 300px;">
+                                        <label for="inputtext">Phone Number:</label>
+                                        <input type="text" class="form-control" id="inputtext">
+                                    </div> 
+                                    <div class="form-group" style="width: 630px;">
+                                        <label for="inputtext">Assigned Store:</label>
+                                        <input type="text" class="form-control" id="inputtext">
+                                    </div>                         
+                                </div>
+                                <div class="container row mt-3" style="justify-content: center;">
+                                    <div class="card mr-2" style="width: 18rem;">
+                                        <div class="card-body" style="text-align: center;">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        <h4>Artist</h4> 
+                                                        <p>Artist has full privileges to a store as a store owner.</p>
+                                                    </label>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mr-2" style="width: 18rem;">
+                                            <div class="card-body" style="text-align: center;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <h4>Agent</h4> 
+                                                            <p>Agents are responsible for promoting brand products and services to customers.</p>
+                                                        </label>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                            <div class="card-body" style="text-align: center;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <h4>Owner</h4> 
+                                                            <p>Store Owners are persons who oversee the daily operations of a store including management.</p>
+                                                        </label>
+                                                    </div>
+                                            </div>
+                                    </div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!--Modal end-->
+            <!--User Table-->
+            <div class="container">
+                    <table class="table mt-3">
+                        <thead class="bg-success">
+                          <tr>
+                            <th colspan="5" scope="col">Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone Number</th>
+                          </tr>
+                        </thead>
+                        <tbody style="background: #F0FFF0;">
+                          <tr>
+                            <td colspan="5">Koroga Fest</td>
+                            <td>Event</td>
+                            <td>Kes</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td colspan="5">Koroga Fest</td>
+                            <td>Event</td>
+                            <td>Kes</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td colspan="5">Koroga Fest</td>
+                            <td>Event</td>
+                            <td>Kes</td>
+                            <td>100</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+    
+                </div>
+            </div>
+            <!--User Table End-->
+
+            
+        </div>
+    </div>
+
+{% endblock %}

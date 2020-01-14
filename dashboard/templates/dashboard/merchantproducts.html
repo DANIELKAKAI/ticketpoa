@@ -1,0 +1,61 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <h4 class="ml-auto text-light">Products</h4>
+                </div>
+            </nav>
+
+            <div class="container">
+                    <button type="button" id="sidebarCollapse" class="btn btn-success">   
+                            Upload Product
+                    </button>
+            </div>
+
+            
+            <div class="container">
+                <table class="table mt-3">
+                    <thead class="bg-success">
+                      <tr>
+                        <th colspan="5" scope="col">Product Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody style="background: #F0FFF0;">
+                      <tr>
+                        <td colspan="5">Koroga Fest</td>
+                        <td>Event</td>
+                        <td>Kes</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">Koroga Fest</td>
+                        <td>Event</td>
+                        <td>Kes</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">Koroga Fest</td>
+                        <td>Event</td>
+                        <td>Kes</td>
+                        <td>100</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+ {% endblock %}

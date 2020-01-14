@@ -1,0 +1,99 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+  
+  <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'mainapp/img/bg-img/books.jpg' %}); height: 450px;">
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-12  text-center wow fadeInUp" data-wow-delay="300ms" style="padding-top: 50px">
+                <h3 style="color: #fff">Search for Books</h3>
+                <p style="color: #fff">Get the best prices for the best books</p>
+            </div>            
+        </div>
+        <!-- Heading End -->
+            <!-- Search Bar -->
+            <section class="container" style="background-color: rgb(0,0,0,0.5); padding: 8px">
+                <div class="container mt-3">
+                    <form >
+                        <div class="mb-5" style="text-align: center;">
+                            <h4 style="color: #fff; margin-bottom: 10px;">Search by:</h4>
+                        </div>
+                        <div style="justify-content: center;" class="form-row">
+                            <div class="form-group mr-5">
+                                <label style="color: #fff" for="movie">Book Title:</label>
+                                <input type="text" id="movie" class="form-control flight-search flight-date">
+                            </div>
+                            <div class="form-group mr-5">
+                                <label style="color: #fff" for="depature-date">Author</label>
+                                <input type="text" id="depature-date" class="form-control flight-search flight-date">
+                            </div>
+                            <div class="form-group">
+                                    <label style="color: #fff" for="depature-date">Category</label>
+                                    <select id="depature-date" class="form-control flight-search flight-date">
+                                        <option>Poetry</option>
+                                        <option>Romance</option>
+                                        <option>Fiction</option>
+                                        <option>Biography</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="form-row" style="justify-content: center;">
+                            <button  href="#" class="btn confer-btn mt-3" style="width: 300px;">Search</button> 
+                        </div>
+                    </form>
+                </div>
+            </section>
+        
+    </section>
+
+    <!--Popular Movies-->
+   <div class="row mt-3">
+       <div class="col-12  text-center wow fadeInUp" data-wow-delay="300ms">
+           <h4>Popular Books</h4>
+       </div>            
+   </div>
+   <section class="pt-3" style="background-color: #e5e5e5;">
+       <div class=" container">
+           
+           <div class=" row" style=" width: 100%;" >
+             
+
+                 <!-- Single Card Area -->
+                <div class=" card mr-3" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top  "  src="{% static 'mainapp/img/bg-img/abstract.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        
+                        <h5>
+                            <a href="#">
+                                <span>Abstract paint</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <span style="color: #17a04e;">
+                                KES
+                                <b>13,000</b>
+                            </span>
+                            <a href="product.html" class="btn btn-success pull-right">View</a>
+                        </div>
+                       
+                        
+                    </div>
+                  </div>
+
+               <div class="col-12">
+                   <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                       <a class="btn confer-btn-white" href="events.html">view all Books <i class="zmdi zmdi-long-arrow-right"></i></a>
+                   </div>
+               </div>
+           </div>
+            <!-- Scroll Icon -->
+        <div class="icon-scroll" id="scrollDown"></div>
+       </div>
+
+   </section>
+   {% endblock %}
+

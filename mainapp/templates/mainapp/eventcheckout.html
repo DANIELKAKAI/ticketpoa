@@ -1,0 +1,222 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+  
+<!--main page-->
+<section class=" mt-3 pt-2 pb-2" >
+	<div class="container mt-2">
+		<div class="row">
+			<img src="img/bg-img/event3.jpg" alt="check-out-image">
+			<div class="ml-5">
+				<h2 class="checkout-title">Koroga Fest</h2>
+				<h5 class="event-owner">
+					Event brough to you by
+					<a href="#">KENYA NIGHT EVENTS</a>
+				</h5>
+				<p class="eventDate">
+					<span>
+						<img src="https://img.icons8.com/material-outlined/24/000000/planner.png">
+						Sat, Nov 16th - Sunday, Nov 17th 2019
+					</span>
+				</p>
+				<p class="eventDate">
+					<span>
+						<img src="https://img.icons8.com/pastel-glyph/24/000000/clock.png">
+						09:00 PM - 05:00 AM
+					</span>
+				</p>
+				<p class="eventDate">
+					<span>
+						<img src="https://img.icons8.com/material/24/000000/worldwide-location--v1.png">
+						The Alchemist
+					</span>
+				</p>
+				<p class="eventDate">
+					<span>
+						<img src="https://img.icons8.com/carbon-copy/24/000000/money-bag.png">
+						KES 1,000
+					</span>
+				</p>
+				
+			</div>
+			<div class="ml-5">
+                <h3 class="checkout-title">Details:</h3>
+				<div>
+					<input class="checkout-form checkout-container" type="text" placeholder=" name ">
+				</div>
+				<div>
+					<input class="checkout-form checkout-container" type="email" placeholder="email address">
+				</div>
+				<div>
+					<input class="checkout-form checkout-container" type="" placeholder="phone number">
+				</div>
+
+			</div>
+		</div>	
+	</div>
+    <!-- Ticket Area -->
+    <div class="ticket_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cart_container">
+                        <div class="ticket_title">Ticket packages:</div>
+                        <div class="mt-3">
+
+                            <!--Cart item -->
+                            <ul class="cart_list">
+                                <li class="cart_item clearfix">
+                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                        <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_title">Ticket Type:</div>
+                                            <div class="cart_item_text">VVIP</div>
+                                        </div>
+                        
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Quantity</div>
+                                            <div class="cart_item_text">
+                                                <input type="number" style="width: 60px" name="">
+                                            </div>
+                                        </div>
+                                        <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_title">Price</div>
+                                            <div class="cart_item_text">$2000</div>
+                                        </div>
+                                        <div class="cart_item_total cart_info_col">
+                                            <div class="cart_item_title">Total</div>
+                                            <div class="cart_item_text">$2000</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <!--Cart item END-->
+                            <!--Cart item -->
+                            <ul class="cart_list">
+                                <li class="cart_item clearfix">
+                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                        <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_title">Ticket Type:</div>
+                                            <div class="cart_item_text">VIP</div>
+                                        </div>
+                        
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Quantity</div>
+                                            <div class="cart_item_text">
+                                                <input type="number" style="width: 60px" name="">
+                                            </div>
+                                        </div>
+                                        <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_title">Price</div>
+                                            <div class="cart_item_text">$2000</div>
+                                        </div>
+                                        <div class="cart_item_total cart_info_col">
+                                            <div class="cart_item_title">Total</div>
+                                            <div class="cart_item_text">$2000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <!--Cart item -->
+                            <!--Cart item -->
+                            <ul class="cart_list">
+                                <li class="cart_item clearfix">
+                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                        <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_title">Ticket Type:</div>
+                                            <div class="cart_item_text">Regular</div>
+                                        </div>
+                        
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Quantity</div>
+                                            <div class="cart_item_text">
+                                                <input type="number" style="width: 60px" name="">
+                                            </div>
+                                        </div>
+                                        <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_title">Price</div>
+                                            <div class="cart_item_text">$2000</div>
+                                        </div>
+                                        <div class="cart_item_total cart_info_col">
+                                            <div class="cart_item_title">Total</div>
+                                            <div class="cart_item_text">$2000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <!--Cart item -->
+                        </div>
+                        
+                        <!-- Order Total -->
+                        <div class="order_total">
+                            <div class="order_total_content text-md-right">
+                                <div class="order_total_title">Order Total:</div>
+                                <div class="order_total_amount">$2000</div>
+                            </div>
+                        </div>
+
+                        <!-- Book Button -->
+
+                        <div class="cart_buttons">
+                            <button type="button" class="button cart_button_checkout" data-toggle="modal" data-target="#exampleModal">Proceed to Checkout</button>
+                             
+
+                             <!-- Modal -->
+                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog" role="document">
+                                 <div class="modal-content">
+                                   <div class="modal-header" style="justify-content: center;">
+                                     <h5 class="modal-title" id="exampleModalLabel">
+                                        <p>Koroga Fest</p>
+                                        <p>Sat, Nov 16th - Sunday, Nov 17th 2019</p>
+                                        Order summary:
+                                     </h5>
+                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                     </button>
+                                   </div>
+                                   <div class="modal-body row">
+                                    <div class="ml-3 mr-5">
+                                        <h5>Quantity:</h5>
+                                        <h5 class="ml-3">1</h5>
+                                    </div>
+                                    <div class="ml-5">
+                                        <h5 >Cost:</h5>
+                                        <h5>1,000.00</h5>
+                                    </div>
+                                     
+                                   </div>
+                                   <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                     <button type="button" class="btn btn-success">Buy with Mpesa</button>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="container mt-3" class="checkout-info">
+		<h3>INFORMATION:</h3>
+		<p>
+			<p>Welcome to the road of 10 Years of Kenya Nights! Each month we're bringing you some of the top artists in the world across various genres to build up to a decade of our journey that goes down December 11th!</p>
+
+			<p>2019 has been a wild ride and the year is coming to an end. Before we head and celebrate 10 YEARS of KENYA NIGHTS and head to Diani for NYE, we have one ore treat in store for you all. For those who were at the monumental Major Lazer Sound System gig last year bared witness to one of the greatest Afro House DJ's to have hit Kenyan shores. We found it only fitting to have the Portuguese/Angolan Afro master back for our November build up! We're extremely honoured to have Djeff back in the 254!</p>
+
+			<p>Save The Date - November 16th</p>
+			
+
+			<p>Management Reserves The Right of Admission.</p>
+		</p>
+	</div>
+</section>
+<!-- main page ends here-->
+{% endblock %}

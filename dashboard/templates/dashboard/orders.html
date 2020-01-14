@@ -1,0 +1,119 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <h4 class="ml-auto text-light">Orders</h4>
+                </div>
+            </nav>
+
+            <form class="container mb-3" >
+                <div class="form-box" style="text-align: center;">
+                    <input type="text" class="search-field" placeholder="Search for orders">
+                    <button class="search-btn btn-success" type="button">Search</button>
+                </div>
+            </form>
+            <form class="container form-row margin-auto">
+                    <div class="form-group  mr-3">
+                        <label for="inputtext">Order Date From:</label>
+                        <input type="date" class="search_order form-control" id="inputtext">
+                    </div>
+                    
+                    <div class="form-group  mr-3">
+                        <label for="inputtext">Order Date to:</label>
+                        <input type="date" class="search_order form-control" id="inputtext">
+                    </div>
+                   
+                    <div class="form-group mr-3">
+                        <label for="inputtext">Order Status:</label>
+                        <select id="return-date" class="search_order form-control" id="inputtext">
+                            <option>All Orders</option>
+                            <option>Complete</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mr-3">
+                        <label for="inputtext">Payment Method:</label>
+                        <select id="return-date" class="search_order form-control" id="inputtext">
+                            <option>All</option>
+                            <option>Mobile Money</option>
+                            <option>Cash</option>
+                            <option>Free</option>
+                        </select>
+                    </div>
+            </form>
+            <div class="container form-row margin-auto">
+                <button class="search-btn btn-success" type="button">Download orders</button>
+                <button class="search-btn btn-success" type="button">Email Orders</button>
+                <div class="ml-auto">
+                    <select id="return-date" class="search_order form-control mt-auto" id="inputtext">
+                        <option>Gate and Online Orders</option>
+                        <option>Online Orders</option>
+                        <option>Gate Orders</option>
+                    </select>
+                </div>
+            </div>
+
+            
+            <div class="container">
+                <table class="table mt-3">
+                    <thead class="bg-success">
+                      <tr>
+                        <th scope="col">ORDER</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">EMAIL</th>
+                        <th scope="col">PHONE</th>
+                        <th scope="col">METHOD</th>
+                        <th scope="col">DATE</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">CHANNEL</th>
+                      </tr>
+                    </thead>
+                    <tbody style="background: #F0FFF0;">
+                      <tr>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                      </tr>
+                      <tr>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                      </tr>
+                      <tr>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+
+{% endblock %}

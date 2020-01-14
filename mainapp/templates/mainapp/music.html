@@ -1,0 +1,57 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+     <!-- Search Bar -->
+      <section  style="background-color: #e5e5e5; padding-top: 8px; padding-bottom: 8px">
+        <div class="container mt-3" style="justify-content: center; margin-left: 200px;">
+              <form >
+                <div class="form-box">
+                    <input type="text" class="search-field search-holiday" placeholder="Search for music">
+                    <button class="search-btn" type="button">Search</button>
+                </div>
+              </form>
+          </div>
+      </section>
+
+    <section class="pt-3" style="background-color: #e5e5e5;">
+        <div class="container">
+            
+            <div class="row" style=" width: 100%;" >
+
+             
+
+                 <!-- Single Card Area -->
+                <div class=" card mr-3" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top  "  src="{% static 'mainapp/img/bg-img/album.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        
+                        <h5>
+                            <a href="#">
+                                <span>Sauti Sol</span>
+                                <span class="album-name">Live and Die in Africa</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <span style="color: #17a04e;">
+                                KES
+                                <b>1,000</b>
+                            </span>
+                            <a href="album.html" class="btn btn-success pull-right">View</a>
+                        </div>
+                       
+                        
+                    </div>
+                  </div>
+
+
+            </div>
+        </div>
+
+    </section> 
+
+
+    {% endblock %}

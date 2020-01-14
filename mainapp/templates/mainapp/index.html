@@ -1,0 +1,260 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <!-- Modal-->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" style="max-width: 400px">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit user Profile</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <div class="container row col-md-8">
+                        <div class="form-group mr-3" style="width: 350px;">
+                            <label for="inputtext">First Name:</label>
+                            <input type="text"  id="inputtext">
+                        </div>
+                        <div class="form-group mr-3" style="width: 350px;">
+                            <label for="inputtext">Last Name:</label>
+                            <input type="text" id="inputtext">
+                        </div>
+                        <div class="form-group mr-3" style="width: 350px;">
+                            <label for="inputtext">Email Address:</label>
+                            <input type="email" id="inputtext">
+                        </div>
+                        <div class="form-group mr-3" style="width: 350px;">
+                            <label for="inputtext">Phone Number:</label>
+                            <input type="text" id="inputtext">
+                        </div>
+                        <div class="form-group mr-3" style="width: 350px;">
+                            <label for="inputtext">Password:</label>
+                            <input type="text"  id="inputtext">
+                        </div>                          
+                    </div>
+                    
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Modal end-->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Slide -->
+            <div>
+                <img src="{% static 'mainapp/img/bg-img/imagesb587.png' %}">
+              
+            </div>
+
+            <!-- Single Slide -->
+            <div>
+                <img src= "{% static 'mainapp/img/bg-img/images5795.png' %}">
+            </div>
+
+            <!-- Single Slide -->
+            <div>
+                <img src="{% static 'mainapp/img/bg-img/images7d2e.png' %}">
+            </div>
+
+        </div>
+
+    
+    </section>
+    <!-- Welcome Area End -->
+
+
+    <!-- Our Speakings Area Start -->
+    <!-- Heading -->
+    <div class="row">
+        <div class="col-12  text-center wow fadeInUp" data-wow-delay="300ms">
+            <h4>Upcoming Events</h4>
+            <p>Grab advance tickets for upcoming events</p>
+        </div>            
+    </div>
+    <section class="pt-3" style="background-color: #e5e5e5;">
+        <div class=" container">
+            
+            <div class=" row" style=" width: 100%;" >
+                
+                <div class=" card ml-3 mr-3" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                    <img class="card-img-top  "  src="{% static 'mainapp/img/bg-img/images168b.jpg' %}" alt="Card image cap">
+                    <div class="card-body evt-info mb-1">
+                        <a href="event.html" class="date-box evt">
+                            <span class="day">Thur</span>
+                            <span class="date">13</span>
+                            <span class="month">Nov</span>
+                        </a>
+                        <h3 class="ml-5">
+                            <a href="eventcheckout.html">Apio Moro</a>
+                        </h3>
+                    </div>
+                  </div>
+
+                <!-- Single Card Area -->
+                <div class=" card mr-3" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                        <img class="card-img-top" src="{% static 'mainapp/img/bg-img/event1.jpg' %}" alt="Card image cap">
+                        <div class="card-body evt-info mb-1">
+                            <a href="event.html" class="date-box evt">
+                                <span class="day">Thur</span>
+                                <span class="date">13</span>
+                                <span class="month">Nov</span>
+                            </a>
+                            <h3 class="ml-5">
+                                <a href="eventcheckout.html">Apio Moro</a>
+                            </h3>
+                        </div>
+                      </div>
+
+                <!-- Single Speaker Area -->
+                <div class=" card mr-3" style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                        <img class="card-img-top" src="{% static 'mainapp/img/bg-img/event2.jpg' %}" alt="Card image cap">
+                        <div class="card-body evt-info mb-1">
+                            <a href="event.html" class="date-box evt">
+                                <span class="day">Thur</span>
+                                <span class="date">13</span>
+                                <span class="month">Nov</span>
+                            </a>
+                            <h3 class="ml-5">
+                                <a href="eventcheckout.html">Apio Moro</a>
+                            </h3>
+                        </div>
+                      </div>
+
+                <!-- Single Speaker Area -->
+                <div class=" card " style="border-radius: 0px; border: 1px solid #bbbbbb; width: 23%;">
+                        <img class="card-img-top" src="{% static 'mainapp/img/bg-img/event3.jpg' %}" alt="Card image cap">
+                        <div class="card-body evt-info mb-1">
+                            <a href="event.html" class="date-box evt">
+                                <span class="day">Thur</span>
+                                <span class="date">13</span>
+                                <span class="month">Nov</span>
+                            </a>
+                            <h3 class="ml-5">
+                                <a href="eventcheckout.html">Apio Moro</a>
+                            </h3>
+                        </div>
+                      </div>
+
+                <div class="col-12">
+                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                        <a class="btn confer-btn-white" href="events.html">view all Events <i class="zmdi zmdi-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+             <!-- Scroll Icon -->
+         <div class="icon-scroll" id="scrollDown"></div>
+        </div>
+
+    </section>
+    <!-- Our Speakings Area End -->
+
+    <!-- Special Holiday Packages -->
+    <!-- Heading -->
+    <div class="row mt-3">
+        <div class="col-12 section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+            <h4>Special Holiday Packages</h4>
+            <p>Travel to popular destinations with affordable deals and special offers</p>
+        </div>            
+    </div>
+
+        <section class="our-speaker-area pt-3" style="background-color: #e5e5e5;">
+         <div class="row mx-1 ">
+             <div class="col-12 col-md-4 col-lg-4" style="width: 367px">
+               <div class="card mb-2">
+                 <img class="card-img-top" src="{% static 'mainapp/img/bg-img/package1.jpg' %}"
+                   alt="Card image cap">
+                 <div class="card-body">
+                   <div class="trav-info trav">
+                        <h5>
+                            <a href="#">
+                                <span>Weekend Escape to Maiyan</span>
+                                <span class="loc">Lake Naivasha, Kenya</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <span class="price">
+                                KES
+                                <b>13,000</b>
+                            </span>
+                            <br>
+                            <small>Per person sharing</small>
+                            <a href="holidays-checkout.html" class="btn btn-success btn-small pull-right">BOOK NOW</a>
+                        </div>
+                       
+                   </div>
+                 </div>
+               </div>
+           </div>
+           <div class="col-12 col-md-4 col-lg-4" style="width: 367px">
+               <div class="card mb-2">
+                 <img class="card-img-top" src="{% static 'mainapp/img/bg-img/package2.jpg' %}"
+                   alt="Card image cap">
+                 <div class="card-body">
+                   <div class="trav-info trav">
+                        <h5>
+                            <a href="#">
+                                <span>Weekend Escape to Maiyan</span>
+                                <span class="loc">Lake Naivasha, Kenya</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <span class="price">
+                                KES
+                                <b>13,000</b>
+                            </span>
+                            <br>
+                            <small>Per person sharing</small>
+                            <a href="holidays-checkout.html" class="btn btn-success btn-small pull-right">BOOK NOW</a>
+                        </div>
+                       
+                   </div>
+                 </div>
+               </div>
+           </div>
+           <div class="col-12 col-md-4 col-lg-4" style="width: 367px">
+               <div class="card mb-2">
+                 <img class="card-img-top" src="{% static 'mainapp/img/bg-img/package3.jpg' %}"
+                   alt="Card image cap">
+                 <div class="card-body">
+                   <div class="trav-info trav">
+                        <h5>
+                            <a href="#">
+                                <span>Weekend Escape to Maiyan</span>
+                                <span class="loc">Lake Naivasha, Kenya</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <span class="price">
+                                KES
+                                <b>13,000</b>
+                            </span>
+                            <br>
+                            <small>Per person sharing</small>
+                            <a href="holidays-checkout.html" class="btn btn-success btn-small pull-right">BOOK NOW</a>
+                        </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+            <div class="col-12">
+                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                        <a class="btn confer-btn-white" href="#">view all Events <i class="zmdi zmdi-long-arrow-right"></i></a>
+                    </div>
+                </div>
+         </div>
+     </section>
+    
+        <!-- Holiday Packages-->
+
+{% endblock %}

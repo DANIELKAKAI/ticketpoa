@@ -1,0 +1,78 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+	 <!-- Search Bar -->
+    <section  style="background-color: #e5e5e5; padding-top: 8px; padding-bottom: 8px">
+		<div class="container mt-3" style="justify-content: center; margin-left: 200px;">
+		    <form >
+		    	<div class="form-box">
+		    		<input type="text" class="search-field search-holiday" placeholder="Where do you want to go?">
+		    		<button class="search-btn" type="button">Search</button>
+		    	</div>
+		    </form>
+	    </div>
+    </section>
+
+	<!-- Welcome Area Start -->
+	<section class="welcome-area">
+	    <div class="welcome-slides owl-carousel">
+	        <!-- Single Slide -->
+	        <div>
+	            <img src="{% static 'mainapp/img/bg-img/holiday.png' %}">
+	          
+	        </div>
+
+	        <!-- Single Slide -->
+	        <div>
+	            <img src= "{% static 'mainapp/img/bg-img/holiday1.png' %}">
+	        </div>
+
+	        <!-- Single Slide -->
+	        <div>
+	            <img src="{% static 'mainapp/img/bg-img/holiday2.png' %}">
+	        </div>
+
+	    </div>
+
+	
+	</section>
+	<!-- Welcome Area End -->
+
+	  <section class="our-speaker-area pt-3" style="background-color: #e5e5e5;">
+         <div class="row mx-1 ">
+             
+           <div class="col-12 col-md-4 col-lg-4" style="width: 367px">
+               <div class="card mb-2">
+                 <img class="card-img-top" src="{% static 'mainapp/img/bg-img/package2.jpg' %}"
+                   alt="Card image cap">
+                 <div class="card-body">
+                   <div class="trav-info trav">
+                        <h5>
+                            <a href="#">
+                                <span>Weekend Escape to Maiyan</span>
+                                <span class="loc">Lake Naivasha, Kenya</span>
+                            </a>
+                        </h5>
+                        <div>
+                            <span class="price">
+                                KES
+                                <b>13,000</b>
+                            </span>
+                            <br>
+                            <small>Per person sharing</small>
+                            <a href="holidays-checkout.html" class="btn btn-success btn-small pull-right">BOOK NOW</a>
+                        </div>
+                       
+                   </div>
+                 </div>
+               </div>
+           </div>
+          
+          
+         
+           
+         </div>
+     </section>
+{% endblock %}

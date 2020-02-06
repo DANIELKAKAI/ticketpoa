@@ -9,7 +9,7 @@
 <section class=" mt-3 pt-2 pb-2" >
 	<div class="container mt-2">
 		<div class="row">
-			<img src="img/bg-img/event3.jpg" alt="check-out-image">
+			<img src="{% static 'mainapp/img/bg-img/event3.jpg' %}" alt="check-out-image">
 			<div class="ml-5">
 				<h2 class="checkout-title">Koroga Fest</h2>
 				<h5 class="event-owner">
@@ -60,96 +60,42 @@
     <!-- Ticket Area -->
     <div class="ticket_section">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cart_container">
                         <div class="ticket_title">Ticket packages:</div>
                         <div class="mt-3">
-
-                            <!--Cart item -->
-                            <ul class="cart_list">
-                                <li class="cart_item clearfix">
-                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                        <div class="cart_item_name cart_info_col">
-                                            <div class="cart_item_title">Ticket Type:</div>
-                                            <div class="cart_item_text">VVIP</div>
-                                        </div>
-                        
-                                        <div class="cart_item_quantity cart_info_col">
-                                            <div class="cart_item_title">Quantity</div>
-                                            <div class="cart_item_text">
-                                                <input type="number" style="width: 60px" name="">
-                                            </div>
-                                        </div>
-                                        <div class="cart_item_price cart_info_col">
-                                            <div class="cart_item_title">Price</div>
-                                            <div class="cart_item_text">$2000</div>
-                                        </div>
-                                        <div class="cart_item_total cart_info_col">
-                                            <div class="cart_item_title">Total</div>
-                                            <div class="cart_item_text">$2000</div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                            <!--Cart item END-->
-                            <!--Cart item -->
-                            <ul class="cart_list">
-                                <li class="cart_item clearfix">
-                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                        <div class="cart_item_name cart_info_col">
-                                            <div class="cart_item_title">Ticket Type:</div>
-                                            <div class="cart_item_text">VIP</div>
-                                        </div>
-                        
-                                        <div class="cart_item_quantity cart_info_col">
-                                            <div class="cart_item_title">Quantity</div>
-                                            <div class="cart_item_text">
-                                                <input type="number" style="width: 60px" name="">
-                                            </div>
-                                        </div>
-                                        <div class="cart_item_price cart_info_col">
-                                            <div class="cart_item_title">Price</div>
-                                            <div class="cart_item_text">$2000</div>
-                                        </div>
-                                        <div class="cart_item_total cart_info_col">
-                                            <div class="cart_item_title">Total</div>
-                                            <div class="cart_item_text">$2000</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                            <!--Cart item -->
-                            <!--Cart item -->
-                            <ul class="cart_list">
-                                <li class="cart_item clearfix">
-                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                        <div class="cart_item_name cart_info_col">
-                                            <div class="cart_item_title">Ticket Type:</div>
-                                            <div class="cart_item_text">Regular</div>
-                                        </div>
-                        
-                                        <div class="cart_item_quantity cart_info_col">
-                                            <div class="cart_item_title">Quantity</div>
-                                            <div class="cart_item_text">
-                                                <input type="number" style="width: 60px" name="">
-                                            </div>
-                                        </div>
-                                        <div class="cart_item_price cart_info_col">
-                                            <div class="cart_item_title">Price</div>
-                                            <div class="cart_item_text">$2000</div>
-                                        </div>
-                                        <div class="cart_item_total cart_info_col">
-                                            <div class="cart_item_title">Total</div>
-                                            <div class="cart_item_text">$2000</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                            <!--Cart item -->
+                                <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Ticket type</th>
+                                          <th scope="col">Quantity</th>
+                                          <th scope="col">Price </th>
+                                          <th scope="col">Total</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">VVIP</th>
+                                          <td><input type="number" style="width: 60px" name=""></td>
+                                          <td>5000</td>
+                                          <td>10000</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">VVIP</th>
+                                          <td><input type="number" style="width: 60px" name=""></td>
+                                          <td>5000</td>
+                                          <td>10000</td>
+                                        </tr>
+                                      <tr>
+                                          <th scope="row">VVIP</th>
+                                          <td><input type="number" style="width: 60px" name=""></td>
+                                          <td>5000</td>
+                                          <td>10000</td>
+                                        </tr>
+                                      </tbody>
+                                </table>
                         </div>
                         
                         <!-- Order Total -->
